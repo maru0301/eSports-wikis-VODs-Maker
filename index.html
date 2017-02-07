@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>eSports wikis VODs Maker</title>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+	<body>
+		<main>
+			<article>
+				<header>
+					<h1>eSports wikis VODs Maker</h1>
+					<hr>
+					<div id="region" class="region">Region : </div>
+				</header>
+			</article>
+			<article>
+				<section id="vods" class="vods">
+				</section>
+				<input type="submit" onclick="CreateMatch();" value="Create Match"/>
+				<input type="submit" onclick="CreateGame();" value="Create Game"/>
+			</article>
+			<article>
+				<section>
+					<h1><input type="submit" onclick="GetWikisCode();" value="output tag"/></h1>
+					<span id="code" class="code">
+					</span>
+					<br />
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
